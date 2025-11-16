@@ -1,9 +1,26 @@
 import { defineConfig } from 'vitepress'
+import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Programming guide",
-  description: "A site to help student the basics of programming laguage",
+  description: "A site to help student the basics of programming language",
+  markdown: {
+    config(md) {
+      md.use(groupIconMdPlugin)
+    },
+  },
+  vite: {
+    plugins: [
+      groupIconVitePlugin({
+        customIcon: {
+          ".h": "vscode-icons:file-type-cheader",
+          ".cpp": "vscode-icons:file-type-cpp2",
+          ".hpp": "vscode-icons:file-type-cppheader",
+        }
+      })
+    ],
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

@@ -22,24 +22,38 @@ export default defineConfig({
     ],
   },
   themeConfig: {
+    search: {
+      provider: 'local'
+    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
     ],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    sidebar: {
+      '/cpp': [
+        {
+          text: 'Bases de C++',
+          link: '/cpp',
+          items: [
+            { text: 'Antes de empezar', link: '/cpp/before' },
+            { text: 'Compiladores', link: '/cpp/compiler' },
+            { text: 'Hola Mundo', link: '/cpp/basics/01-hello_world' },
+            { text: 'Variables', link: '/cpp/basics/02-variables' },
+            { text: 'Tipos de datos', link: '/cpp/basics/03-data_types' },
+            { text: 'Operadores', link: '/cpp/basics/04-operators', items: [{ text: 'Operadores de bit', link: '/cpp/basics/04.1-bit_operators' }] },
+            { text: 'I/O estándar', link: '/cpp/basics/05-IO_basic' },
+            { text: 'Estructura del programa', link: '/cpp/basics/06-program_structure' },
+            { text: 'Librerías y encabezados', link: '/cpp/basics/07-libraries' },
+            { text: 'Conditionales', link: '/cpp/basics/08-conditional' },
+            { text: 'Bucles', link: '/cpp/basics/09-loops' },
+            { text: 'Arreglos', link: '/cpp/basics/10-arrays' },
+            { text: 'Funciones', link: '/cpp/basics/11-functions' },
+            { text: 'Alcance de variables', link: '/cpp/basics/12-scope' },
+          ]
+        }
+      ]
+    }
   }
 })

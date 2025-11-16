@@ -5,21 +5,33 @@ layout: home
 hero:
   name: "Programming guide"
   text: "A site to help student the basics of programming laguage"
-  tagline: My great project tagline
-  actions:
-    - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+  tagline: "Guías de estudio para aprender los fundamentos de varios lenguajes de programación."
+  # actions:
+  #   - theme: brand
+  #     text: Markdown Examples
+  #     link: /markdown-examples
+  #   - theme: alt
+  #     text: API Examples
+  #     link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: C++
+    details: Guía de estudio para aprender C++ desde cero, cubriendo conceptos básicos y avanzados.
+    icon: 
+      src: /assets/cplusplus-original.svg
+      alt: C++ Icon
+    link: /cpp/
+  - title: JavaScript
+    details: Recursos y tutoriales para dominar JavaScript, el lenguaje de programación web más popular.
+    icon:
+      src: /assets/javascript-original.svg
+      alt: JavaScript Icon
+    link: /javascript/
+  - title: Python
+    details: Introducción a Python, un lenguaje versátil y fácil de aprender para principiantes.
+    icon: 
+      src: /assets/python-original.svg
+      alt: Python Icon
+    link: /python/
 ---
 

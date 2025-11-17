@@ -81,25 +81,6 @@ int main() {
 }
 ```
 
-## Iteración sobre Arreglos
-
-Se pueden utilizar bucles para iterar sobre los elementos de un arreglo. Un ejemplo común es el uso de un bucle `for` para imprimir todos los elementos de un arreglo:
-
-```cpp
-#include <iostream>
-
-int main() {
-    int numeros[] = {10, 20, 30, 40, 50};
-    int tamaño = sizeof(numeros) / sizeof(numeros[0]); // Calcula el tamaño del arreglo
-    
-    for (int i = 0; i < tamaño; i++) {
-        std::cout << "Elemento " << i << ": " << numeros[i] << std::endl;
-    }
-    
-    return 0;
-}
-```
-
 ## Modificación de Elementos del Arreglo
 
 Los elementos de un arreglo pueden ser modificados asignando nuevos valores a través de sus índices:
@@ -153,28 +134,6 @@ int main() {
     };
     
     std::cout << "Elemento en la fila 1, columna 2: " << matriz[1][2] << std::endl; // Imprime 6
-    
-    return 0;
-}
-```
-
-Es posible iterar sobre los elementos de un arreglo multidimensional utilizando bucles `for` para procesar o modificar cada elemento según sea necesario.
-
-```cpp
-#include <iostream>
-
-int main() {
-    int matriz[2][3] = {
-        {1, 2, 3},
-        {4, 5, 6}
-    };
-    
-    for (int i = 0; i < 2; i++) {
-        for (int j = 0; j < 3; j++) {
-            std::cout << matriz[i][j] << " ";
-        }
-        std::cout << std::endl;
-    }
     
     return 0;
 }

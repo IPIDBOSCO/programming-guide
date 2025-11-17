@@ -7,7 +7,7 @@ import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 export default defineConfig({
   title: "Programming guide",
   description: "A site to help student the basics of programming language",
-  base: import.meta.env.GH_PAGES ? '/programming-guide/' : '/',
+  base: process.env.VITE_GH_PAGES ? '/programming-guide/' : '/',
   markdown: {
     config(md) {
       md.use(groupIconMdPlugin);

@@ -7,7 +7,7 @@ import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 export default defineConfig({
   title: "Programming guide",
   description: "A site to help student the basics of programming language",
-  base: process.env.VITE_GH_PAGES ? '/programming-guide/' : '/',
+  base: process.env.VITE_BASE_URL || '/',
   markdown: {
     config(md) {
       md.use(groupIconMdPlugin);
@@ -32,9 +32,11 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      // { text: 'Examples', link: '/markdown-examples' }
     ],
-
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/IPIDBOSCO/programming-guide' }
+    ],
     sidebar: {
       '/cpp': [
         {

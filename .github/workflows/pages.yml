@@ -25,7 +25,7 @@ concurrency:
 
 env:
   NODE_ENV: production
-  VITE_GH_PAGES: true
+  VITE_BASE_URL: "/programming-guide/"
 
 jobs:
   # Build job

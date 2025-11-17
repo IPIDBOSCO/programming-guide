@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
+import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
+
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -7,7 +9,8 @@ export default defineConfig({
   description: "A site to help student the basics of programming language",
   markdown: {
     config(md) {
-      md.use(groupIconMdPlugin)
+      md.use(groupIconMdPlugin);
+      md.use(tabsMarkdownPlugin);
     },
   },
   vite: {
@@ -51,6 +54,16 @@ export default defineConfig({
             { text: 'Arreglos', link: '/cpp/basics/10-arrays' },
             { text: 'Funciones', link: '/cpp/basics/11-functions' },
             { text: 'Alcance de variables', link: '/cpp/basics/12-scope' },
+          ]
+        },
+        {
+          text: 'Lógica y Estructura',
+          link: '/cpp/logic',
+          items: [
+            { text: 'Pseudocódigo', link: '/cpp/logic/01-pseudocode' },
+            { text: 'Iteraciones en arreglos', link: '/cpp/logic/02-array_iterations' },
+            { text: 'Introducción a la memoria', link: '/cpp/logic/03-memory_intro' },
+            { text: 'Punteros', link: '/cpp/logic/04-pointers' },
           ]
         }
       ]

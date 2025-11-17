@@ -6,7 +6,7 @@ title: Entrada y Salida Básica [C++]
 
 Cuando hablamos de entrada y salida, I/O por sus siglas en inglés (Input/Output), nos referimos a la forma en que un programa interactúa con el mundo exterior, ya sea recibiendo datos (entrada) o mostrando resultados (salida). En C++, la biblioteca estándar proporciona varias herramientas para manejar estas operaciones de manera eficiente.
 
-Los `I/O` son diferentes a una [API]() (Interfaz de Programación de Aplicaciones), que es un conjunto de definiciones y protocolos para construir e integrar software. Mientras que una API define cómo los componentes de software deben interactuar, los I/O se centran en la transferencia de datos entre el programa y el usuario o el sistema.
+Los `I/O` son diferentes a una [API](#) (Interfaz de Programación de Aplicaciones), que es un conjunto de definiciones y protocolos para construir e integrar software. Mientras que una API define cómo los componentes de software deben interactuar, los I/O se centran en la transferencia de datos entre el programa y el usuario o el sistema.
 
 ## Flujo de Entrada y Salida
 

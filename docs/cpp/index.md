@@ -1,9 +1,6 @@
 ---
 title: Introducción a C++
 ---
-<script setup>
-import "@runno/runtime";
-</script>
 
 # Introducción a C++
 
@@ -18,8 +15,9 @@ En esta guía exploraremos los fundamentos del lenguaje, desde su sintaxis bási
 Vamos ir juntos en este viaje el entendimiento de C++, aunque tengas que **dispararte en el pie** unas cuantas veces en el camino. Al final, la recompensa vale la pena: dominar un lenguaje poderoso que te abrirá muchas puertas en el mundo del desarrollo de software. ¡Comencemos!
 
 <iframe
- frameBorder="0"
- height="450px"  
- src="https://onecompiler.com/embed/cpp?hideNewFileOption=True" 
+  frameborder="0"
+ height="450px"
+ class="one-compiler"
+ src="https://onecompiler.com/embed/cpp?&hideNewFileOption=true&hideNew=true&hideStdin=true&hideLanguageSelection=true&hideTitle=true&theme=dark&hideEditorOptions=true" 
  width="100%"
  ></iframe>

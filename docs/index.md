@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Programming guide"
-  text: "A site to help student the basics of programming laguage"
+  text: "A site to help student the basics of programming language"
   tagline: "Guías de estudio para aprender los fundamentos de varios lenguajes de programación."
   # actions:
   #   - theme: brand
@@ -15,6 +15,12 @@ hero:
   #     link: /api-examples
 
 features:
+  - title: Diagramas de flujo
+    details: Aprende a crear diagramas de flujo para representar visualmente algoritmos y procesos.
+    icon:
+      src: /assets/archive.png
+      alt: Flowchart Icon
+    link: /flow-chart/
   - title: C++
     details: Guía de estudio para aprender C++ desde cero, cubriendo conceptos básicos y avanzados.
     icon: 

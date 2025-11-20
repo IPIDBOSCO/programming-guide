@@ -1,0 +1,212 @@
+.mermaid {
+  --text-50: #f2f2f2;
+  --text-100: #e6e6e6;
+  --text-200: #cccccc;
+  --text-300: #b3b3b3;
+  --text-400: #999999;
+  --text-500: #808080;
+  --text-600: #666666;
+  --text-700: #4d4d4d;
+  --text-800: #333333;
+  --text-900: #1a1a1a;
+  --text-950: #0d0d0d;
+
+  --blue-50: #e5ebff;
+  --blue-100: #ccd7ff;
+  --blue-200: #99afff;
+  --blue-300: #6687ff;
+  --blue-400: #335fff;
+  --blue-500: #0037ff;
+  --blue-600: #002ccc;
+  --blue-700: #002199;
+  --blue-800: #001666;
+  --blue-900: #000b33;
+  --blue-950: #00061a;
+
+  --amber-50: #fefbe7;
+  --amber-100: #fcf7cf;
+  --amber-200: #faef9e;
+  --amber-300: #f7e76e;
+  --amber-400: #f5df3d;
+  --amber-500: #f2d70d;
+  --amber-600: #c2ac0a;
+  --amber-700: #918108;
+  --amber-800: #615605;
+  --amber-900: #302b03;
+  --amber-950: #181601;
+
+  --green-50: #f7fee7;
+  --green-100: #effdce;
+  --green-200: #dffa9e;
+  --green-300: #cef86d;
+  --green-400: #bef63c;
+  --green-500: #aef40b;
+  --green-600: #8bc309;
+  --green-700: #689207;
+  --green-800: #466105;
+  --green-900: #233102;
+  --green-950: #111801;
+
+  --red-50: #fde8e8;
+  --red-100: #fad1d2;
+  --red-200: #f6a2a5;
+  --red-300: #f17478;
+  --red-400: #ed454b;
+  --red-500: #e8171e;
+  --red-600: #ba1218;
+  --red-700: #8b0e12;
+  --red-800: #5d090c;
+  --red-900: #2e0506;
+  --red-950: #170203;
+
+  --purple-50: #ebe8fc;
+  --purple-100: #d7d1fa;
+  --purple-200: #afa3f5;
+  --purple-300: #8875f0;
+  --purple-400: #6047eb;
+  --purple-500: #3819e6;
+  --purple-600: #2d14b8;
+  --purple-700: #220f8a;
+  --purple-800: #160a5c;
+  --purple-900: #0b052e;
+  --purple-950: #060317;
+
+  --orange-50: #faf1eb;
+  --orange-100: #f4e2d7;
+  --orange-200: #eac5ae;
+  --orange-300: #dfa886;
+  --orange-400: #d48b5e;
+  --orange-500: #c96e36;
+  --orange-600: #a1582b;
+  --orange-700: #794220;
+  --orange-800: #512c15;
+  --orange-900: #28160b;
+  --orange-950: #140b05;
+}
+
+.dark .mermaid {
+  --text-50: #0d0d0d;
+  --text-100: #1a1a1a;
+  --text-200: #333333;
+  --text-300: #4d4d4d;
+  --text-400: #666666;
+  --text-500: #808080;
+  --text-600: #999999;
+  --text-700: #b3b3b3;
+  --text-800: #cccccc;
+  --text-900: #e6e6e6;
+  --text-950: #f2f2f2;
+
+  --blue-50: #00061a;
+  --blue-100: #000b33;
+  --blue-200: #001666;
+  --blue-300: #002199;
+  --blue-400: #002ccc;
+  --blue-500: #0037ff;
+  --blue-600: #335fff;
+  --blue-700: #6687ff;
+  --blue-800: #99afff;
+  --blue-900: #ccd7ff;
+  --blue-950: #e5ebff;
+
+  --amber-50: #181601;
+  --amber-100: #302b03;
+  --amber-200: #615605;
+  --amber-300: #918108;
+  --amber-400: #c2ac0a;
+  --amber-500: #f2d70d;
+  --amber-600: #f5df3d;
+  --amber-700: #f7e76e;
+  --amber-800: #faef9e;
+  --amber-900: #fcf7cf;
+  --amber-950: #fefbe7;
+
+  --green-50: #111801;
+  --green-100: #233102;
+  --green-200: #466105;
+  --green-300: #689207;
+  --green-400: #8bc309;
+  --green-500: #aef40b;
+  --green-600: #bef63c;
+  --green-700: #cef86d;
+  --green-800: #dffa9e;
+  --green-900: #effdce;
+  --green-950: #f7fee7;
+
+  --red-50: #170203;
+  --red-100: #2e0506;
+  --red-200: #5d090c;
+  --red-300: #8b0e12;
+  --red-400: #ba1218;
+  --red-500: #e8171e;
+  --red-600: #ed454b;
+  --red-700: #f17478;
+  --red-800: #f6a2a5;
+  --red-900: #fad1d2;
+  --red-950: #fde8e8;
+
+  --purple-50: #060317;
+  --purple-100: #0b052e;
+  --purple-200: #160a5c;
+  --purple-300: #220f8a;
+  --purple-400: #2d14b8;
+  --purple-500: #3819e6;
+  --purple-600: #6047eb;
+  --purple-700: #8875f0;
+  --purple-800: #afa3f5;
+  --purple-900: #d7d1fa;
+  --purple-950: #ebe8fc;
+
+  --orange-50: #140b05;
+  --orange-100: #28160b;
+  --orange-200: #512c15;
+  --orange-300: #794220;
+  --orange-400: #a1582b;
+  --orange-500: #c96e36;
+  --orange-600: #d48b5e;
+  --orange-700: #dfa886;
+  --orange-800: #eac5ae;
+  --orange-900: #f4e2d7;
+  --orange-950: #faf1eb;
+}
+
+.mermaid .flowchart path {
+  stroke: inherit;
+  fill: inherit;
+  stroke-width: inherit;
+}
+
+.mermaid .start-end {
+  fill: var(--amber-100);
+  stroke: var(--amber-500);
+  stroke-width: 2px;
+}
+
+.mermaid .process {
+  fill: var(--blue-100);
+  stroke: var(--blue-500);
+  stroke-width: 2px;
+}
+
+.mermaid .decision {
+  fill: var(--green-100);
+  stroke: var(--green-500);
+  stroke-width: 2px;
+}
+
+.mermaid .input {
+  fill: var(--red-100);
+  stroke: var(--red-500);
+  stroke-width: 2px;
+}
+
+.mermaid .output {
+  fill: var(--purple-100);
+  stroke: var(--purple-500);
+  stroke-width: 2px;
+}
+
+.mermaid .arrowheadPath {
+  stroke: var(--text-900);
+  fill: var(--text-900);
+}

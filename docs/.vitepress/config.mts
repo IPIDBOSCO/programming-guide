@@ -5,6 +5,9 @@ import { withMermaid } from "vitepress-plugin-mermaid";
 
 // https://vitepress.dev/reference/site-config
 export default withMermaid({
+  mermaidPlugin: {
+    class: "mermaid",
+  },
 
   title: "Programming guide",
   description: "A site to help student the basics of programming language",

@@ -32,7 +32,7 @@ flowchart TD
   class A start-end
 ```
 
-Este ejemplo de diagrama de flujo muestra el proceso para diagnosticar por qué una lámpara no funciona, incluyendo decisiones y acciones a tomar. No es un diagrama exhaustivo, pero ilustra cómo se pueden representar visualmente los pasos en un proceso.
+Este ejemplo de diagrama de flujo muestra el proceso para diagnosticar por qué una lámpara no funciona, incluyendo decisiones y acciones a tomar. No es un diagrama exhaustivo, pero ilustra cómo se pueden representar visualmente los pasos en un proceso. 
 
 Los diagramas de flujo utilizan una variedad de símbolos estandarizados para representar diferentes tipos de acciones o decisiones.
 
@@ -45,3 +45,13 @@ Los diagramas de flujo utilizan una variedad de símbolos estandarizados para re
 | ![connector](/assets/flow_chart/inspection.svg) | Conector | Utilizado para conectar diferentes partes del diagrama, especialmente cuando se extiende a múltiples páginas. |
 
 Estos símbolos se combinan para crear diagramas que representan procesos complejos de manera clara y concisa, facilitando la comprensión y el análisis de los mismos.
+
+<code-editor >
+```cpp
+#include 
+int main() {
+    std::cout << "Hola, mundo!" << std::endl;
+    return 0;
+}
+```
+</code-editor>

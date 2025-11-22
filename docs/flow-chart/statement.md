@@ -17,8 +17,8 @@ flowchart TD
   A --> B
   B -- Sí --> C
   B -- No --> D
-  C --> E
-  D --> E
+  C ---> E
+  D ---> E
 
   classDef start-end fill: inherit,stroke:inherit,stroke-width:inherit;
   classDef process fill: inherit,stroke:inherit,stroke-width:inherit;

@@ -27,3 +27,14 @@ int main() {
 
 </code-editor>
 
+<code-runner language="cpp">
+
+```cpp
+#include <iostream>
+int main() {
+    std::cout << "Hola, mundo!" << std::endl;
+    return 0;
+}
+```
+
+</code-runner>

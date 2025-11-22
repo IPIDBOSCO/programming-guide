@@ -45,4 +45,3 @@ Los diagramas de flujo utilizan una variedad de símbolos estandarizados para re
 | ![connector](/assets/flow_chart/inspection.svg) | Conector | Utilizado para conectar diferentes partes del diagrama, especialmente cuando se extiende a múltiples páginas. |
 
 Estos símbolos se combinan para crear diagramas que representan procesos complejos de manera clara y concisa, facilitando la comprensión y el análisis de los mismos.
-

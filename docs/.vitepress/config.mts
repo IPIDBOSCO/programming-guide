@@ -10,6 +10,7 @@ export default withMermaid({
   },
   mermaid: {
     flowchart: {
+      curve: 'stepAfter',
       defaultRenderer: 'elk'
     }
   },
@@ -37,7 +38,7 @@ export default withMermaid({
           ".cpp": "vscode-icons:file-type-cpp2",
           ".hpp": "vscode-icons:file-type-cppheader",
         }
-      })
+      }),
     ],
   },
   themeConfig: {

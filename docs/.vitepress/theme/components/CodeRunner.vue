@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { CodeJar } from 'codejar';
-import { createHighlighter } from 'shiki/bundle/web';
 
 import Button from 'primevue/button';
 import Badge from 'primevue/badge';
@@ -20,7 +19,6 @@ const codeOutputRef = ref<HTMLElement | null>(null);
 
 const jar = ref<CodeJar | null>(null);
 
-const originalCode = ref<string>('');
 const code = ref<string>('');
 const result = ref<string>(' ');
 
@@ -31,60 +29,29 @@ const completed = ref<boolean>(false);
 onMounted(async () => {
   await nextTick();
 
-  const highlighter = await createHighlighter({
-    themes: ['github-dark', 'github-light'],
-    langs: ['javascript', 'typescript', 'python', 'bash', 'xml', 'json', 'css', 'cpp']
-  });
-
-  const highligh = (editor: HTMLElement) => {
-    const innerCode = editor.textContent || '';
-
-    let html = highlighter.codeToHtml(innerCode, { lang: props.language, theme: 'github-dark' });
-    html = html.replace(/^[\s\S]*?<code[^>]*>([\s\S]*?)<\/code>[\s\S]*$/m, "$1");
-
-    editor.innerHTML = html;
-
-    code.value = jar.value?.toString() || '';
-  }
-
   const codeElement = codeRef.value?.querySelector('pre.shiki code')
 
-  jar.value = CodeJar(codeElement as HTMLElement, highligh, {
+  jar.value = CodeJar(codeElement as HTMLElement, () => { }, {
     tab: '  ',
   });
 
-  originalCode.value = jar.value.toString();
   code.value = jar.value.toString();
-});
-
-const resetCode = () => {
-  if (isRunning.value) return;
-
-  if (jar.value) {
-    jar.value.updateCode(originalCode.value);
-    code.value = originalCode.value;
-    result.value = ' ';
-    okResult.value = false;
-    completed.value = false;
-  }
-};
+  jar.value.destroy();
+})
 
 const runCode = async () => {
   if (isRunning.value) return;
 
-  try {
-    result.value = ' ';
-    isRunning.value = true;
-    okResult.value = false;
-    completed.value = false;
-    // delay to show running state
-    // await new Promise(resolve => setTimeout(resolve, 60000));
+  isRunning.value = true;
+  completed.value = false;
+  okResult.value = false;
+  result.value = ' ';
 
+  try {
     const response = await codapi(code.value, props.language);
 
     result.value = response.stdout;
     okResult.value = response.ok;
-
   } catch (error) {
     result.value = 'Error al ejecutar el código.';
     okResult.value = false;
@@ -92,13 +59,12 @@ const runCode = async () => {
     isRunning.value = false;
     completed.value = true;
   }
-};
+}
 </script>
 
 <template>
-  <div ref="codeRef" class="code-editor">
+  <div ref="codeRef" class="code-runner">
     <slot />
-
     <div class="mini-bar">
       <div>
         <strong>Salida: <span v-if="completed" class="status" :ok="okResult">
@@ -107,8 +73,7 @@ const runCode = async () => {
           </span></strong>
       </div>
       <div class="actions">
-        <Button @click="resetCode" class="btn-reset" variant="outlined" severity="danger" icon="pi pi-refresh"
-          iconPos="left" label="Reset"></Button>
+        <!-- <Button @click="resetCode" class="btn-reset" variant="outlined" severity="danger" icon="pi pi-refresh" iconPos="left" label="Reset"></Button> -->
         <Button @click="runCode" class="btn-run" variant="outlined" severity="success" icon="pi pi-play" iconPos="left"
           label="Run"></Button>
       </div>
@@ -124,7 +89,7 @@ const runCode = async () => {
 </template>
 
 <style scoped>
-.code-editor {
+.code-runner {
   display: flex;
   flex-direction: column;
   gap: 0rem;

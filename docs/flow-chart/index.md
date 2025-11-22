@@ -46,12 +46,3 @@ Los diagramas de flujo utilizan una variedad de símbolos estandarizados para re
 
 Estos símbolos se combinan para crear diagramas que representan procesos complejos de manera clara y concisa, facilitando la comprensión y el análisis de los mismos.
 
-<code-editor >
-```cpp
-#include 
-int main() {
-    std::cout << "Hola, mundo!" << std::endl;
-    return 0;
-}
-```
-</code-editor>

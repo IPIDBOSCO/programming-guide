@@ -1,45 +1,49 @@
 <script setup lang="ts">
-import hljs from 'highlight.js/lib/core';
-import javascript from 'highlight.js/lib/languages/javascript';
-import typescript from 'highlight.js/lib/languages/typescript';
-import python from 'highlight.js/lib/languages/python';
-import bash from 'highlight.js/lib/languages/bash';
-import xml from 'highlight.js/lib/languages/xml';
-import json from 'highlight.js/lib/languages/json';
-import css from 'highlight.js/lib/languages/css';
-import cpp from 'highlight.js/lib/languages/cpp';
+import { CodeJar } from 'codejar';
+import { createHighlighter } from 'shiki/bundle/web';
 
-import { ref, onMounted, watch } from 'vue';
+import { ref, onMounted, nextTick } from 'vue';
 
-import 'highlight.js/styles/github-dark.css';
-
-hljs.registerLanguage('javascript', javascript);
-hljs.registerLanguage('typescript', typescript);
-hljs.registerLanguage('python', python);
-hljs.registerLanguage('bash', bash);
-hljs.registerLanguage('xml', xml);
-hljs.registerLanguage('json', json);
-hljs.registerLanguage('css', css);
-hljs.registerLanguage('cpp', cpp);
-
-const props = defineProps<{
-  code: string;
-}>();
+const props = withDefaults(defineProps<{
+  language: string;
+}>(), {
+  language: 'javascript',
+});
 
 const codeRef = ref<HTMLElement | null>(null);
 
-const highlightCode = () => {
-  if (codeRef.value) {
-    hljs.highlightElement(codeRef.value);
+const jar = ref<CodeJar | null>(null);
+
+
+onMounted(async () => {
+  await nextTick();
+
+  const highlighter = await createHighlighter({
+    themes: ['github-dark', 'github-light'],
+    langs: ['javascript', 'typescript', 'python', 'bash', 'xml', 'json', 'css', 'cpp']
+  });
+
+  const highligh = (editor: HTMLElement) => {
+    const code = editor.textContent || '';
+
+    const html = highlighter.codeToHtml(code, { lang: props.language, theme: 'github-dark' });
+
+    editor.innerHTML = html.replace(/^[\s\S]*?<code[^>]*>([\s\S]*?)<\/code>[\s\S]*$/m, "$1");
   }
-};
-onMounted(() => {
-  highlightCode();
+
+  const code = codeRef.value?.querySelector('pre.shiki code')
+
+  jar.value = CodeJar(code as HTMLElement, highligh, {
+    tab: '  ',
+  });
 });
 
 </script>
 
 <template>
-  <pre
-    class="code-editor"><code ref="codeRef" class="hljs" editable="true" contenteditable="true"><slot></slot></code></pre>
+  <div ref="codeRef" class="code-editor">
+    <slot />
+  </div>
 </template>
+
+<style></style>

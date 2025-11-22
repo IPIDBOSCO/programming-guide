@@ -28,3 +28,26 @@ flowchart TD
   class C,D process
   class A,E start-end
 ```
+
+## Sentencia `while`
+
+```mermaid
+flowchart TD
+  A([Inicio])
+  B{¿Condición verdadera?}
+  C[Acción dentro del bucle]
+  D([Fin])
+
+  A --> B
+  B -- Sí --> C
+  C --> B
+  B -- No --> D
+
+  classDef start-end fill: inherit,stroke:inherit,stroke-width:inherit;
+  classDef process fill: inherit,stroke:inherit,stroke-width:inherit;
+  classDef decision fill:inherit,stroke:inherit,stroke-width:inherit;
+
+  class B decision
+  class C process
+  class A,D start-end
+```

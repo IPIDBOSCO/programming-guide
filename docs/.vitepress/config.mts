@@ -8,6 +8,11 @@ export default withMermaid({
   mermaidPlugin: {
     class: "mermaid",
   },
+  mermaid: {
+    flowchart: {
+      defaultRenderer: 'elk'
+    }
+  },
 
   title: "Programming guide",
   description: "A site to help student the basics of programming language",

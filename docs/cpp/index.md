@@ -14,10 +14,16 @@ En esta guía exploraremos los fundamentos del lenguaje, desde su sintaxis bási
 
 Vamos ir juntos en este viaje el entendimiento de C++, aunque tengas que **dispararte en el pie** unas cuantas veces en el camino. Al final, la recompensa vale la pena: dominar un lenguaje poderoso que te abrirá muchas puertas en el mundo del desarrollo de software. ¡Comencemos!
 
-<iframe
-  frameborder="0"
- height="450px"
- class="one-compiler"
- src="https://onecompiler.com/embed/cpp/444yxk7xt?&hideNewFileOption=true&hideNew=true&hideStdin=true&hideLanguageSelection=true&hideTitle=true&theme=dark&hideEditorOptions=true" 
- width="100%"
- ></iframe>
+<code-editor language="cpp">
+
+```cpp
+#include <iostream>
+
+int main() {
+    std::cout << "Hola, mundo!" << std::endl;
+    return 0;
+}
+```
+
+</code-editor>
+

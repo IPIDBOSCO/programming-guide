@@ -1,3 +1,5 @@
+@import 'highlight.js/styles/github-dark.css';
+
 .mermaid {
   --text-50: #f2f2f2;
   --text-100: #e6e6e6;

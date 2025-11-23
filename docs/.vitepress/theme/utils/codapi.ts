@@ -1,4 +1,5 @@
-const codapiURL = import.meta.env.CODAPI_URL || 'localhost:1313';
+const codapiURL = import.meta.env.VITE_CODAPI_HOST || 'http://localhost';
+const codapiPort = import.meta.env.VITE_CODAPI_PORT || '1313';
 
 interface CodapiRequest {
   sandbox: 'cpp' | 'python' | 'javascript';
@@ -44,7 +45,7 @@ interface CodapiResponse {
 }
 
 export async function codapi(code: string, lang: string): Promise<CodapiResponse> {
-  const response = await fetch(`http://${codapiURL}/v1/exec`, {
+  const response = await fetch(`${codapiURL}:${codapiPort}/v1/exec`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

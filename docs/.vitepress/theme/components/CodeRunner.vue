@@ -36,6 +36,10 @@ onMounted(async () => {
   });
 
   code.value = jar.value.toString();
+
+  if (codeElement) {
+    codeElement.removeAttribute('contenteditable');
+  }
   jar.value.destroy();
 })
 

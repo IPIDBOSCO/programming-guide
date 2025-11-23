@@ -85,6 +85,16 @@ export default withMermaid({
             { text: 'Punteros', link: '/cpp/logic/04-pointers' },
           ]
         }
+      ],
+      'flow-chart': [
+        {
+          text: 'Diagrama de flujo',
+          link: '/flow-chart',
+          items: [
+            { text: 'Trabajar con diagramas de flujo', link: '/flow-chart/work-with-flowchart' },
+            { text: 'Bucles en diagramas de flujo', link: '/flow-chart/loop-flowchart' },
+          ]
+        }
       ]
     }
   }

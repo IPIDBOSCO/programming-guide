@@ -202,7 +202,7 @@
 
 .mermaid .output {
   fill: var(--purple-100);
-  stroke: var(--purple-500);
+  stroke: var(--purple-300);
   stroke-width: 2px;
 }
 

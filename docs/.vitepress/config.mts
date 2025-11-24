@@ -86,6 +86,24 @@ export default withMermaid({
           ]
         },
         {
+          text: 'Modularidad',
+          link: '/cpp/modularity',
+          items: [
+            { text: 'Estructuras', link: '/cpp/modularity/structs' },
+            {
+              text: 'Clases y objetos', link: '/cpp/modularity/classes_objects', items: [
+                { text: 'Constructores y destructores', link: '/cpp/modularity/classes_objects/01-constructors_destructors' },
+                { text: 'Encapsulación', link: '/cpp/modularity/classes_objects/02-encapsulation' },
+                { text: 'Herencia', link: '/cpp/modularity/classes_objects/03-inheritance' },
+                { text: 'Polimorfismo', link: '/cpp/modularity/classes_objects/04-polymorphism' },
+              ]
+            },
+            { text: 'Vectores', link: '/cpp/modularity/vectors' },
+            { text: 'Strings', link: '/cpp/modularity/strings' },
+
+          ]
+        },
+        {
           text: 'Otros conceptos',
           items: [
             { text: 'Manejo de errores', link: '/cpp/other-concepts/error-handling' },

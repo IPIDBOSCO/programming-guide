@@ -13,28 +13,3 @@ Aprender C++ te obliga a entender no solo “cómo escribir código”, sino có
 En esta guía exploraremos los fundamentos del lenguaje, desde su sintaxis básica hasta conceptos intermedios, con énfasis en las buenas prácticas modernas (C++11 en adelante). El objetivo no es solo aprender a “hacer que funcione”, sino comprender por qué funciona.
 
 Vamos ir juntos en este viaje el entendimiento de C++, aunque tengas que **dispararte en el pie** unas cuantas veces en el camino. Al final, la recompensa vale la pena: dominar un lenguaje poderoso que te abrirá muchas puertas en el mundo del desarrollo de software. ¡Comencemos!
-
-<code-editor language="cpp">
-
-```cpp
-#include <iostream>
-
-int main() {
-    std::cout << "Hola, mundo!" << std::endl;
-    return 0;
-}
-```
-
-</code-editor>
-
-<code-runner language="cpp">
-
-```cpp
-#include <iostream>
-int main() {
-    std::cout << "Hola, mundo!" << std::endl;
-    return 0;
-}
-```
-
-</code-runner>

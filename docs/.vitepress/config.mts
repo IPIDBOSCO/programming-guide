@@ -91,11 +91,11 @@ export default withMermaid({
           items: [
             { text: 'Estructuras', link: '/cpp/modularity/structs' },
             {
-              text: 'Clases y objetos', link: '/cpp/modularity/classes_objects', items: [
-                { text: 'Constructores y destructores', link: '/cpp/modularity/classes_objects/01-constructors_destructors' },
-                { text: 'Encapsulación', link: '/cpp/modularity/classes_objects/02-encapsulation' },
-                { text: 'Herencia', link: '/cpp/modularity/classes_objects/03-inheritance' },
-                { text: 'Polimorfismo', link: '/cpp/modularity/classes_objects/04-polymorphism' },
+              text: 'Clases y objetos', link: '/cpp/modularity/class-object', items: [
+                { text: 'Constructores y destructores', link: '/cpp/modularity/class-object/01-constructors' },
+                { text: 'Encapsulación', link: '/cpp/modularity/class-object/02-encapsulation' },
+                { text: 'Herencia', link: '/cpp/modularity/class-object/03-inheritance' },
+                { text: 'Polimorfismo', link: '/cpp/modularity/class-object/04-polymorphism' },
               ]
             },
             { text: 'Vectores', link: '/cpp/modularity/vectors' },

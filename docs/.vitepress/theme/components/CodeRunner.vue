@@ -10,8 +10,10 @@ import { codapi } from '../utils/codapi';
 
 const props = withDefaults(defineProps<{
   language: string;
+  showErrorOutput?: boolean;
 }>(), {
   language: 'javascript',
+  showErrorOutput: false,
 });
 
 const codeRef = ref<HTMLElement | null>(null);
@@ -54,7 +56,12 @@ const runCode = async () => {
   try {
     const response = await codapi(code.value, props.language);
 
-    result.value = response.stdout;
+    if (props.showErrorOutput && !response.ok) {
+      result.value = response.stderr || 'Error desconocido.';
+    } else {
+      result.value = response.stdout;
+    }
+
     okResult.value = response.ok;
   } catch (error) {
     result.value = 'Error al ejecutar el código.';

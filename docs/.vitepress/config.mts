@@ -84,6 +84,13 @@ export default withMermaid({
             { text: 'Introducción a la memoria', link: '/cpp/logic/03-memory_intro' },
             { text: 'Punteros', link: '/cpp/logic/04-pointers' },
           ]
+        },
+        {
+          text: 'Otros conceptos',
+          items: [
+            { text: 'Manejo de errores', link: '/cpp/other-concepts/error-handling' },
+            { text: 'Archivos', link: '/cpp/other-concepts/files' },
+          ]
         }
       ],
       'flow-chart': [

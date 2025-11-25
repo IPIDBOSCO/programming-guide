@@ -142,4 +142,3 @@ Aquí hay algunos métodos útiles que puedes utilizar con `std::string`:
 - `substr(pos, len)`: Devuelve una subcadena que comienza en la posición `pos` y tiene una longitud de `len`.
 - `find(sub)`: Busca la subcadena `sub` y devuelve la posición de la primera aparición.
 - `replace(pos, len, sub)`: Reemplaza la parte del string que comienza en `pos` y tiene una longitud de `len` con la subcadena `sub`.
-

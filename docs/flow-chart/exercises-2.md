@@ -204,3 +204,58 @@ flowchart TD
 ```
 
 :::
+
+## Ejercicio 5: Sistema de calefacción en un invernadero
+
+Realizar un diagrama de flujo de un sistema de calefacción para un invernadero que mantenga la temperatura entre 18°C y 24°C. Si la temperatura cae por debajo de 18°C, el sistema debe encender la calefacción. Si la temperatura supera los 24°C, el sistema debe encender los ventiladores. El sistema debe verificar la temperatura cada 10 minutos. No pueden estar encendidos ambos sistemas al mismo tiempo.
+
+::: details Problema resuelto
+
+```mermaid
+---
+config:
+  flowchart:
+    curve: linear
+---
+flowchart TD
+  A([Inicio])
+  B[Leer temperatura actual]
+  C{¿Temperatura < 18°C?}
+  D[Encender calefacción]
+  E{¿Temperatura > 24°C?}
+  F[Encender ventiladores]
+  G[Apagar calefacción]
+  H[Apagar ventiladores]
+  I[Esperar 10 minutos]
+
+  O[ ]:::empty
+
+  A --> B
+  B --> C
+  C == Sí ==> D
+
+  D --- O
+
+  C == No ==> G
+  G --> E
+  E == Sí ==> F
+
+  F --- O
+
+  E == No ==> H
+  H --- O
+
+  O --> I
+  I --> B
+
+  classDef start-end fill: inherit,stroke:inherit,stroke-width:inherit;
+  classDef process fill: inherit,stroke:inherit,stroke-width:inherit;
+  classDef decision fill:inherit,stroke:inherit,stroke-width:inherit;
+  classDef empty width:0px,height:0px;
+
+  class A start-end
+  class B,D,F,G,H,I process
+  class C,E decision
+```
+
+:::

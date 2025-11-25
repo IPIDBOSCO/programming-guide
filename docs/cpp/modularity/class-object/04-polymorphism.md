@@ -6,7 +6,7 @@ title: Polimorfismo en C++
 
 El polimorfismo, derivado del griego que significa "muchas formas", es un principio fundamental de la programación orientada a objetos que permite que una misma función o método pueda comportarse de diferentes maneras según el contexto en el que se utilice. En C++, el polimorfismo se logra principalmente a través de la herencia y las funciones virtuales.
 
-Aquí también aplicaremos un poco de lo que son los conceptos de [funciones y sobrecarga de funciones](../advance-functions).
+Aquí también aplicaremos un poco de lo que son los conceptos de [funciones y sobrecarga de funciones](../advanced-functions).
 
 ## Tipos de polimorfismo
 Existen dos tipos principales de polimorfismo en C++:

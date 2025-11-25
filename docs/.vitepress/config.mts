@@ -23,6 +23,7 @@ export default withMermaid({
       md.use(groupIconMdPlugin);
       md.use(tabsMarkdownPlugin);
     },
+    math: true,
   },
   vite: {
     server: {
@@ -119,6 +120,9 @@ export default withMermaid({
           items: [
             { text: 'Trabajar con diagramas de flujo', link: '/flow-chart/work-with-flowchart' },
             { text: 'Bucles en diagramas de flujo', link: '/flow-chart/loop-flowchart' },
+            // { text: 'Funciones en diagramas de flujo', link: '/flow-chart/functions-flowchart' },
+            { text: 'Ejercicios #1', link: '/flow-chart/exercises-1' },
+            { text: 'Ejercicios #2', link: '/flow-chart/exercises-2' }
           ]
         }
       ]

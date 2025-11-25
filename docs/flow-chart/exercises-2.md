@@ -102,3 +102,105 @@ flowchart TD
 ```
 
 :::
+
+## Ejercicio 3: Semáforo de 3 colores
+
+Realizar un diagrama de flujo para un semáforo que cambia entre tres colores: rojo, amarillo y verde. El semáforo debe permanecer en cada color durante un tiempo específico antes de cambiar al siguiente color en el ciclo: rojo -> verde -> amarillo -> rojo.
+
+- Rojo: 50 segundos
+- Verde: 45 segundos
+- Amarillo: 5 segundos
+
+::: details Problema resuelto
+
+Este diagrama de flujo representa el ciclo continuo de un semáforo que cambia entre los colores rojo, verde y amarillo, permaneciendo en cada color durante el tiempo especificado. El diagrama no tiene fin, ya que el semáforo debe seguir funcionando indefinidamente. Se inicia apagando las luces (solo para darles un estado inicial) luego comienza el ciclo.
+
+```mermaid
+flowchart TD
+  A([Inicio])
+  T_R[⏱️ Esperar 50 segundos]
+  T_G[⏱️ Esperar 45 segundos]
+  T_Y[⏱️ Esperar 5 segundos]
+
+  A --> B[Apagar luz roja] --> C[Apagar luz verde] --> D[Apagar luz amarilla]
+  D --> E[Encender luz roja] --> T_R --> F[Apagar luz roja]
+  F --> G[Encender luz verde] --> T_G --> H[Apagar luz verde]
+  H --> I[Encender luz amarilla] --> T_Y --> J[Apagar luz amarilla]
+  J --> E
+
+  classDef start-end fill: inherit,stroke:inherit,stroke-width:inherit;
+  classDef process fill: inherit,stroke:inherit,stroke-width:inherit;
+  class A start-endverde
+
+  class B,C,D,E,F,G,H,I,J process
+```
+
+:::
+
+## Ejercicio 4: Cajero con PIN y saldo suficiente
+
+Realizar un diagrama de flujo para un cajero automático que permita a un usuario retirar dinero solo si ingresa el PIN correcto y tiene suficiente saldo en su cuenta. Si el PIN es incorrecto, solo puede tener tres intentos antes de bloquear la cuenta. Si el saldo es insuficiente, debe mostrar un mensaje de error.
+
+::: details Problema resuelto
+
+Este diagrama de flujo incluye verificaciones para el PIN y el saldo antes de permitir un retiro. Si el usuario ingresa un PIN incorrecto, tiene hasta tres intentos antes de que la cuenta se bloquee. Si el saldo es insuficiente, se muestra un mensaje de error.
+
+```mermaid
+---
+config:
+  flowchart:
+    curve: linear
+---
+flowchart TD
+  A([Inicio])
+  BB[intentos = 3]
+  B[/Ingresar PIN/]
+  C{¿PIN correcto?}
+  D[/Ingresar monto de retiro/]
+  E{¿Saldo suficiente?}
+  F[Retirar dinero]
+  G[/Mostrar mensaje de error de saldo insuficiente/]
+  H[intentos = intentos - 1]
+  I[/PIN incorrecto, intentos restantes: intentos/]
+  J{¿intentos > 0?}
+  K[/Cuenta bloqueada/]
+  L[/Retiro exitoso/]
+  M([Fin])
+  O[ ]:::empty
+  OO[ ]:::empty
+
+  A --> BB
+  BB --> B
+  B --> C
+  C == Sí ==> D
+  C == No ==> H
+  H --> I
+  I --> J
+  J == Sí ==> B
+  J == No ==> K
+  K --- OO
+  D --> E
+  E == Sí ==> F
+  F --> L
+  L --- O
+  E == No ==> G
+  G --- O
+
+  O --- OO
+  OO --> M
+
+  classDef start-end fill: inherit,stroke:inherit,stroke-width:inherit;
+  classDef process fill: inherit,stroke:inherit,stroke-width:inherit;
+  classDef decision fill:inherit,stroke:inherit,stroke-width:inherit;
+  classDef output fill:inherit,stroke:inherit,stroke-width:inherit;
+  classDef input fill:inherit,stroke:inherit,stroke-width:inherit;
+  classDef empty width:0px,height:0px;
+
+  class A,M start-end
+  class BB,F,H process
+  class C,E,J decision
+  class G,I,K,L output
+  class B,D input
+```
+
+:::

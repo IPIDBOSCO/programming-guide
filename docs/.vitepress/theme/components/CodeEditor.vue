@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { CodeJar } from 'codejar';
+import { type CodeJar } from 'codejar';
 import { createHighlighter } from 'shiki/bundle/web';
 
 import Button from 'primevue/button';
@@ -29,6 +29,7 @@ const okResult = ref<boolean>(false);
 const completed = ref<boolean>(false);
 
 onMounted(async () => {
+  const { CodeJar } = await import('codejar');
   await nextTick();
 
   const highlighter = await createHighlighter({

@@ -90,6 +90,7 @@ export default withMermaid({
           link: '/cpp/modularity',
           items: [
             { text: 'Estructuras', link: '/cpp/modularity/structs' },
+            { text: 'Funciones avanzadas', link: '/cpp/modularity/advanced-functions' },
             {
               text: 'Clases y objetos', link: '/cpp/modularity/class-object', items: [
                 { text: 'Constructores y destructores', link: '/cpp/modularity/class-object/01-constructors' },

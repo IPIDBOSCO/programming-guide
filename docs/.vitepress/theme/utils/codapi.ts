@@ -45,7 +45,7 @@ interface CodapiResponse {
 }
 
 export async function codapi(code: string, lang: string): Promise<CodapiResponse> {
-  const response = await fetch(`${codapiURL}:${codapiPort}/v1/exec`, {
+  const response = await fetch(`http://192.168.100.191:${codapiPort}/v1/exec`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

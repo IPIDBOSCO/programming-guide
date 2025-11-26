@@ -1,5 +1,8 @@
 ---
 title: Diagrama de flujo
+next:
+  title: Trabajo con diagramas de flujo
+  link: /flow-chart/work-with-flowchart
 ---
 
 # Diagrama de flujo

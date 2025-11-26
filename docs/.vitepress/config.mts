@@ -125,6 +125,18 @@ export default withMermaid({
             { text: 'Ejercicios #2', link: '/flow-chart/exercises-2' }
           ]
         }
+      ],
+      'microcontrollers': [
+        {
+          text: 'Microcontroladores',
+          link: '/microcontrollers',
+          items: [
+            { text: 'Introducción a los microcontroladores', link: '/microcontrollers/intro' },
+            { text: 'Antes de empezar', link: '/microcontrollers/before' },
+            { text: 'Mi primer Blink', link: '/microcontrollers/blink' },
+            { text: 'Arquitectura de un microcontrolador', link: '/microcontrollers/architecture' },
+          ]
+        }
       ]
     }
   }

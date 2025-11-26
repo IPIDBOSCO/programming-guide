@@ -1,5 +1,8 @@
 ---
 title: Microcontroladores
+next:
+  title: Introducción a los microcontroladores
+  link: /microcontrollers/intro
 ---
 
 # Microcontroladores

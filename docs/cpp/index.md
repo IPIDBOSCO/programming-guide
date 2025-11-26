@@ -1,5 +1,8 @@
 ---
 title: Introducción a C++
+next:
+  text: Empecemos
+  link: /cpp/before
 ---
 
 # Introducción a C++
@@ -8,7 +11,7 @@ C++ es un lenguaje de programación diseñado para quienes necesitan combinar re
 
 Hoy en día, C++ se utiliza en motores de videojuegos, simuladores físicos, software de ingeniería, sistemas operativos, control de hardware, herramientas de alto rendimiento y prácticamente cualquier área donde el rendimiento no sea negociable. No es el lenguaje más indulgente con los errores, pero recompensa a quienes lo abordan con disciplina: si haces algo mal, te lo hará saber de inmediato; si lo haces bien, trabaja como un reloj suizo.
 
-Aprender C++ te obliga a entender no solo “cómo escribir código”, sino cómo funciona realmente una computadora: memoria, compilación, tipos, punteros y optimización. Esa es una de sus mayores virtudes pedagógicas. Por eso sigue siendo un lenguaje clave en la formación de programadores serios —y también una excelente herramienta para desarrollar criterio técnico sólido.
+Aprender C++ te obliga a entender no solo “cómo escribir código”, sino cómo funciona realmente una computadora, desde la gestión de memoria hasta la optimización del rendimiento.
 
 En esta guía exploraremos los fundamentos del lenguaje, desde su sintaxis básica hasta conceptos intermedios, con énfasis en las buenas prácticas modernas (C++11 en adelante). El objetivo no es solo aprender a “hacer que funcione”, sino comprender por qué funciona.
 

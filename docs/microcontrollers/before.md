@@ -12,7 +12,7 @@ Para aprender a programar microcontroladores, es útil tener conocimientos previ
 - **Sistemas digitales**: Familiarízate con conceptos de sistemas digitales, como lógica binaria, puertas lógicas y sistemas de numeración (binario, decimal, hexadecimal). Estos conceptos son fundamentales para comprender cómo funcionan los microcontroladores a nivel interno.
 
 ::: warning ⚠️ Aviso importante
-Los temas tratados aquí van a partir de que ya se tiene conocimiento básico en programación y electrónica. Si eres nuevo en estos temas, te recomendamos revisar guías introductorias antes de continuar.
+Los temas tratados aquí van a partir de que ya se tiene conocimiento básico en programación en lenguaje `C/C++` y electrónica. Si eres nuevo en estos temas, te recomendamos revisar guías introductorias antes de continuar.
 :::
 
 Además, es recomendable contar con las siguientes herramientas y recursos:

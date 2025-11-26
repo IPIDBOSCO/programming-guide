@@ -39,5 +39,11 @@ features:
       src: /assets/python-original.svg
       alt: Python Icon
     link: /python/
+  - title: Microcontroladores
+    details: Aprende sobre microcontroladores y cómo programarlos para proyectos de electrónica.
+    icon:
+      src: /assets/microcontroller.png
+      alt: Microcontroller Icon
+    link: /microcontrollers/
 ---
 

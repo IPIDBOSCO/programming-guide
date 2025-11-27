@@ -20,4 +20,4 @@ Además, es recomendable contar con las siguientes herramientas y recursos:
 - **Entorno de desarrollo integrado (IDE)**: Instala un IDE compatible con la plataforma de desarrollo que hayas elegido. Por ejemplo, Arduino IDE para placas Arduino o Thonny para Raspberry Pi Pico.
 - **Documentación y recursos en línea**: Familiarízate con la documentación oficial del microcontrolador que estás utilizando, así como con recursos en línea, tutoriales y comunidades de desarrolladores.
 
-Con estos conocimientos y herramientas, estarás bien preparado para comenzar tu viaje en el mundo de los microcontroladores y explorar las infinitas posibilidades que ofrecen en proyectos de electrónica y programación.
+Con estos conocimientos y herramientas, estarás bien preparado para comenzar tu viaje en el mundo de los microcontroladores y explorar las infinitas posibilidades que ofrecen en proyectos de electrónica y programación ⛵.

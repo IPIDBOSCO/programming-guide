@@ -23,3 +23,4 @@ void loop() {
 }
 ```
 
+Este código debería de encender y apagar el LED integrado en la placa cada segundo. `LED_BUILTIN` es una constante que representa el pin al que está conectado el LED integrado en la placa. En la mayoría de las placas Arduino, este pin es el 13. Pero en otras placas puede variar, por lo que es recomendable verificar la documentación de la placa que estés utilizando.

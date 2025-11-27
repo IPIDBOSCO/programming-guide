@@ -38,6 +38,15 @@ export default withMermaid({
           ".h": "vscode-icons:file-type-cheader",
           ".cpp": "vscode-icons:file-type-cpp2",
           ".hpp": "vscode-icons:file-type-cppheader",
+          ".c": "vscode-icons:file-type-c",
+          ".ino": "vscode-icons:file-type-arduino",
+          ".py": "vscode-icons:file-type-python",
+          ".js": "vscode-icons:file-type-js-official",
+          ".ts": "vscode-icons:file-type-typescript-official",
+          ".json": "vscode-icons:file-type-json",
+          ".flowchart": "mdi:chart-flow",
+          ".mc": "mdi:chip",
+
         }
       }),
     ],
@@ -135,6 +144,11 @@ export default withMermaid({
             { text: 'Antes de empezar', link: '/microcontrollers/before' },
             { text: 'Mi primer Blink', link: '/microcontrollers/blink' },
             { text: 'Arquitectura de un microcontrolador', link: '/microcontrollers/architecture' },
+            {
+              text: 'Elementos básicos', items: [
+                { text: 'GPIO', link: '/microcontrollers/basics/01-GPIO' },
+              ]
+            }
           ]
         }
       ]

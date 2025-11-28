@@ -45,7 +45,7 @@ En esta topología, todos los dispositivos están conectados a un dispositivo ce
 - El dispositivo central es un punto único de fallo.
 - Los recursos pueden ser limitados por la capacidad del dispositivo central.
 
-### Topología en Bus`
+### Topología en Bus
 
 En esta topología, todos los dispositivos están conectados a un único cable compartido, conocido como bus. El bus es bidireccional y los datos se transmiten en ambas direcciones.
 
@@ -86,6 +86,19 @@ En esta topología, cada dispositivo está conectado a varios otros dispositivos
 #### Desventajas:
 - Costosa y compleja de implementar.
 - Requiere más cableado y configuración.
+
+### Topología en Árbol
+
+La topología en árbol es una combinación de topologías en estrella y bus. Los dispositivos están organizados en niveles jerárquicos, con un dispositivo central en la parte superior.
+
+![Topología en Árbol](/assets/network/topology-tree.png)
+
+#### Ventajas:
+- Escalable y fácil de gestionar.
+- Permite segmentar la red en subredes.
+#### Desventajas:
+- Si un nodo superior falla, puede afectar a todos los nodos inferiores.
+- Requiere mucho cableado.
 
 ### Topología Híbrida
 

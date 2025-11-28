@@ -45,5 +45,11 @@ features:
       src: /assets/microcontroller.png
       alt: Microcontroller Icon
     link: /microcontrollers/
+  - title: Redes y comunicación
+    details: Conceptos básicos de redes y comunicación, incluyendo tipos de redes y protocolos.
+    icon:
+      src: /assets/red.png
+      alt: Network Icon
+    link: /network/
 ---
 

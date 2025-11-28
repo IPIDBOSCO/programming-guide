@@ -159,9 +159,9 @@ export default withMermaid({
           items: [
             { text: 'Tipos de redes', link: '/network/network-types' },
             { text: 'Componentes de red', link: '/network/components' },
+            { text: 'Direcciones IP y DNS', link: '/network/ip-directions' },
             { text: 'Protocolos de comunicación', link: '/network/protocols' },
             { text: 'Modelo OSI', link: '/network/osi-model' },
-            { text: 'Direcciones IP y DNS', link: '/network/ip-dns' },
             { text: 'Seguridad en redes', link: '/network/security' },
           ]
         }

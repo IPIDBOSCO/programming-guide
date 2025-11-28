@@ -41,3 +41,9 @@ Cada una de estas arquitecturas tiene sus propias características, ventajas y d
 
 Por ejemplo, si se quiere usar Rust en microcontroladores, las arquitecturas más soportadas son ARM Cortex-M y RISC-V, pero no pueden usarse por ejemplo en AVR o PIC.
 :::
+
+## Ejemplo de diagrama de bloques de un microcontrolador
+
+Aquí una imagen de bloques de un ESP32-S3 con todas sus partes principales:
+
+![ESP32-s3 diagrama de bloque](ESP32-s3-block.png)

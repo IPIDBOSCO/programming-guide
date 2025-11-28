@@ -15,6 +15,20 @@ Las redes pueden clasificarse en varios tipos según su alcance, topología y te
 
 ![Tipos de redes](/assets/network/Network-types.png)
 
+### Otros tipos de redes incluyen:
+
+Esta clasificación abarca redes especializadas y variantes de las categorías principales mencionadas anteriormente, que varían en función de su propósito, tecnología y alcance.
+
+- **Red de Área Metropolitana (MAN)**: Cubre una ciudad o un área metropolitana, conectando múltiples LAN.
+- **Red de Área de Almacenamiento (SAN)**: Diseñada para conectar y gestionar dispositivos de almacenamiento de datos.
+- **Red de Área de Campus (CAN)**: Conecta múltiples LAN dentro de un campus, como una universidad o una empresa.
+- **Red de Área Global (GAN)**: Cubre áreas geográficas muy extensas, incluso a nivel mundial, utilizando tecnologías como satélites.
+- **Redes Privadas Virtuales (VPN)**: Permiten conexiones seguras a través de redes públicas, como Internet, utilizando túneles cifrados.
+- **Redes de Área Local Inalámbricas (WLAN)**: Utilizan tecnologías como Wi-Fi para conectar dispositivos dentro de un área limitada sin cables.
+- **Redes de Área Amplia Inalámbricas (WWAN)**: Utilizan tecnologías celulares para conectar dispositivos a través de grandes distancias sin cables.
+
+Estos son solo algunos ejemplos de los muchos tipos de redes que existen, cada una con sus propias características y aplicaciones específicas.
+
 ## Clasificación por topología
 
 La topología de una red se refiere a la disposición física o lógica de los dispositivos y cómo están conectados entre sí.

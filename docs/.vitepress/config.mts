@@ -161,7 +161,7 @@ export default withMermaid({
             { text: 'Componentes de red', link: '/network/components' },
             { text: 'Direcciones IP y DNS', link: '/network/ip-directions' },
             { text: 'Protocolos de comunicación', link: '/network/protocols' },
-            { text: 'Modelo OSI', link: '/network/osi-model' },
+            // { text: 'Modelo OSI', link: '/network/osi-model' },
             { text: 'Seguridad en redes', link: '/network/security' },
           ]
         }

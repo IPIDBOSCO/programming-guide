@@ -134,3 +134,17 @@ La topología híbrida combina dos o más topologías básicas para aprovechar s
 2. **Redes Inalámbricas**: Utilizan señales de radio para conectar dispositivos sin cables físicos. Ejemplos incluyen Wi-Fi, Bluetooth y redes celulares.
 3. **Redes Híbridas**: Combinan tecnologías cableadas e inalámbricas para aprovechar las ventajas de ambas.
 
+### Diferencias entre fibras ópticas y cables de cobre
+
+| Característica          | Fibra Óptica                      | Cables de Cobre                  |
+|------------------------|----------------------------------|----------------------------------|
+| Velocidad              | Muy alta (hasta varios Tbps)     | Moderada (hasta 10 Gbps)         |
+| Distancia              | Muy larga (hasta varios km)      | Limitada (hasta 100 m para Ethernet) |
+| Interferencia          | Inmune a interferencias electromagnéticas | Susceptible a interferencias electromagnéticas |
+| Seguridad              | Difícil de interceptar           | Más fácil de interceptar         |
+| Costo                  | Más caro                         | Más económico                    |
+| Instalación            | Más compleja                     | Más sencilla                     |
+| Durabilidad            | Resistente a condiciones ambientales | Menos resistente a condiciones ambientales |
+| Mantenimiento          | Requiere personal especializado  | Más fácil de mantener            |
+| Aplicaciones           | Redes de alta velocidad, telecomunicaciones | Redes domésticas, oficinas pequeñas |
+Esta tabla destaca las principales diferencias entre las fibras ópticas y los cables de cobre, ayudando a elegir la tecnología adecuada según las necesidades específicas de la red.

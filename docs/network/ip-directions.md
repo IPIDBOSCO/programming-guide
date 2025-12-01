@@ -130,16 +130,92 @@ Hay tomar en cuenta al usar mDNS, que los sistemas operativos Windows no pueden 
 
 ## Comandos útiles
 
-Aquí hay algunos comandos útiles para trabajar con direcciones IP y DNS en diferentes sistemas operativos:
+### Linux
 
-- **Windows**:
-  - `ipconfig`: Muestra la configuración de red del equipo, incluyendo direcciones IP.
-  - `nslookup <nombre_de_dominio>`: Consulta el servidor DNS para obtener la dirección IP asociada a un nombre de dominio.
-- **Linux/macOS**:
-  - `ifconfig` o `ip addr`: Muestra la configuración de red del equipo
-  - `dig <nombre_de_dominio>`: Consulta el servidor DNS para obtener la dirección IP asociada a un nombre de dominio.
-  - `host <nombre_de_dominio>`: Otro comando para consultar el servidor DNS.
-- **Todos los sistemas**:
-  - `ping <dirección_IP_o_nombre_de_dominio>`: Envía paquetes ICMP a una dirección IP o nombre de dominio para verificar la conectividad de red.
+#### 1. Información de interfaces
 
-Estos comandos son útiles para diagnosticar problemas de red, verificar configuraciones y resolver nombres de dominio.
+- **Ver interfaces de red y su estado**
+``` bash
+ip addr
+```
+
+- **Ver interfaces en modo resumen**
+``` bash
+ip -br addr
+```
+
+- **Ver rutas (tabla de enrutamiento)**
+``` bash
+ip route
+```
+
+#### 2. Configuración rápida (temporal)
+
+- **Asignar IP manual**
+``` bash
+sudo ip addr add 192.168.1.50/24 dev eth0
+```
+
+- **Activar / desactivar una interfaz**
+``` bash
+sudo ip link set eth0 up
+sudo ip link set eth0 down
+```
+
+#### 3. Diagnóstico de conectividad
+
+- **Ping**
+``` bash
+ping 8.8.8.8
+ping google.com
+```
+
+- **Rastrear ruta**
+``` bash
+traceroute google.com
+```
+
+o:
+
+``` bash
+tracepath google.com
+```
+
+#### 4. DNS
+- **Consultar dominio**
+``` bash
+dig google.com
+```
+
+- **Solo IP**
+``` bash
+dig +short google.com
+```
+
+#### 5. Puertos y servicios
+- **Ver puertos abiertos**
+``` bash
+ss -tulpn
+```
+
+- **Probar puerto remoto**
+``` bash
+nc -vz 192.168.1.20 22
+```
+
+#### 6. Escaneo básico de red
+- **Descubrir dispositivos**
+``` bash
+nmap -sn 192.168.1.0/24
+```
+
+#### 7. Captura de paquetes
+- **Capturar tráfico**
+``` bash
+sudo tcpdump -i eth0
+```
+
+- **Guardar captura**
+``` bash
+sudo tcpdump -i wlan0 -w captura.pcap
+```

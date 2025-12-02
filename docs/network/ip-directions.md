@@ -128,6 +128,22 @@ Esto facilita mucho la configuración de redes domésticas o pequeñas oficinas,
 
 Hay tomar en cuenta al usar mDNS, que los sistemas operativos Windows no pueden resolver nombre de mDNS dado que no cuentan con soporte nativo para este protocolo. Sin embargo, existen aplicaciones de terceros que pueden agregar esta funcionalidad a Windows, como Bonjour de Apple o Avahi para sistemas basados en Linux. Aunque las versiones más recientes de Windows 10 y Windows 11 han mejorado la compatibilidad con mDNS.
 
+## Dirección MAC
+
+Una dirección MAC (Media Access Control, Control de Acceso al Medio) es un identificador único asignado a la interfaz de red de un dispositivo para su identificación en una red local. A diferencia de las direcciones IP, que pueden cambiar dependiendo de la red a la que se conecte el dispositivo, las direcciones MAC son fijas y están grabadas en el hardware del dispositivo puestas por el fabricante.
+
+Una dirección MAC se compone de 48 bits y se representa comúnmente en formato hexadecimal, dividido en seis grupos de dos dígitos separados por dos puntos o guiones. Un ejemplo de dirección MAC es:
+
+```
+00:1A:2B:3C:4D:5E
+```
+
+Aunque las direcciones MAC no son utilizadas para la comunicación a través de Internet, son esenciales para la comunicación dentro de redes locales (LAN). Los dispositivos utilizan las direcciones MAC para identificar y comunicarse entre sí en la misma red física.
+
+::: info Nota
+Es posible que un usuario cambie la dirección MAC de su dispositivo mediante software, un proceso conocido como "MAC spoofing". Esto puede ser útil por razones de privacidad o para evitar restricciones basadas en direcciones MAC en ciertas redes.
+:::
+
 ## Comandos útiles
 
 ### Linux

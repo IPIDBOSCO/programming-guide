@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 import { withMermaid } from "vitepress-plugin-mermaid";
+import { text } from 'stream/consumers';
 
 // https://vitepress.dev/reference/site-config
 export default withMermaid({
@@ -162,7 +163,17 @@ export default withMermaid({
             { text: 'Direcciones IP y DNS', link: '/network/ip-directions' },
             { text: 'Protocolos de comunicación', link: '/network/protocols' },
             // { text: 'Modelo OSI', link: '/network/osi-model' },
-            { text: 'Seguridad en redes', link: '/network/security' },
+            { text: 'Ethernet', link: '/network/ethernet' },
+            { text: 'Wi-Fi', link: '/network/wi-fi' },
+            { text: 'Puertos', link: '/network/ports' },
+            {
+              text: 'Seguridad en redes', link: '/network/security', items: [
+                { text: 'SSH', link: '/network/security/ssh' },
+                { text: 'HTTPS y TLS/SSL', link: '/network/security/tls-ssl' },
+                { text: 'Firewall', link: '/network/security/firewall' }
+              ]
+            },
+            { text: 'APIs y servicios web', link: '/network/apis' }
           ]
         }
       ]

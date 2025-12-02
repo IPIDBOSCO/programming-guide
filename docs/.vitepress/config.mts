@@ -145,9 +145,16 @@ export default withMermaid({
             { text: 'Antes de empezar', link: '/microcontrollers/before' },
             { text: 'Mi primer Blink', link: '/microcontrollers/blink' },
             { text: 'Arquitectura de un microcontrolador', link: '/microcontrollers/architecture' },
+            { text: 'Bases de arduino', link: '/microcontrollers/arduino-basics' },
             {
               text: 'Elementos básicos', items: [
                 { text: 'GPIO', link: '/microcontrollers/basics/01-GPIO' },
+                { text: 'Serial', link: '/microcontrollers/basics/02-serial' },
+                {
+                  text: 'Entradas y salidas analógicas', link: '/microcontrollers/basics/03-analog', items: [
+                    { text: 'PWM', link: '/microcontrollers/basics/031-PWM' }
+                  ]
+                },
               ]
             }
           ]

@@ -21,7 +21,7 @@ Existen varias opciones para poder compilar C++ en Windows:
 
 - Alternativamente, puedes usar WSL (Windows Subsystem for Linux) para instalar una distribución de Linux dentro de Windows. Esto te permitirá usar GCC o Clang en un entorno Linux sin salir de Windows. Es una opción muy conveniente si planeas trabajar con herramientas y bibliotecas que son más comunes en Linux.
 
-- Otro método es utilizar la herramienta de Anaconda para instalar un entorno de desarrollo que incluya un compilador de C++. Anaconda facilita la gestión de paquetes y entornos para no exponer los comandos ejecutables directamente al sistema operativo. Aunque es más comúnmente utilizada para Python, también puede ser configurada para C++.
+- Otra opción es crear un entorno con Anaconda que incluya un compilador C++. Algunos paquetes aún piden compiladores externos (p. ej. MinGW o MSVC), pero Anaconda también ofrece toolchains como m2w64 (conda install -c conda-forge m2w64-toolchain). No siempre están al día, y Anaconda está más pensado para Python, aunque es útil para proyectos C++ sencillos.
 
 - Finalmente, existen IDEs multiplataforma como CLion o Visual Studio Code con extensiones para C++. Estos entornos pueden facilitar la configuración del compilador y la gestión de proyectos, pero aún así necesitarás tener un compilador instalado en tu sistema.
 

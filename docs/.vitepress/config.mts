@@ -179,6 +179,12 @@ export default withMermaid({
                 { text: 'HTTPS y TLS/SSL', link: '/network/security/tls-ssl' },
                 { text: 'Firewall', link: '/network/security/firewall' }
               ]
+            }, {
+              text: 'Diagnóstico y solución de problemas', link: '/network/troubleshooting', items: [
+                { text: 'Ping', link: '/network/troubleshooting/ping' },
+                { text: 'Traceroute', link: '/network/troubleshooting/traceroute' },
+                { text: 'Netstat', link: '/network/troubleshooting/netstat' }
+              ]
             },
             { text: 'APIs y servicios web', link: '/network/apis' }
           ]

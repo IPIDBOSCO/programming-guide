@@ -147,4 +147,3 @@ La topología híbrida combina dos o más topologías básicas para aprovechar s
 | Durabilidad            | Resistente a condiciones ambientales | Menos resistente a condiciones ambientales |
 | Mantenimiento          | Requiere personal especializado  | Más fácil de mantener            |
 | Aplicaciones           | Redes de alta velocidad, telecomunicaciones | Redes domésticas, oficinas pequeñas |
-Esta tabla destaca las principales diferencias entre las fibras ópticas y los cables de cobre, ayudando a elegir la tecnología adecuada según las necesidades específicas de la red.

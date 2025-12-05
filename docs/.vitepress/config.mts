@@ -3,6 +3,7 @@ import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-i
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 import { withMermaid } from "vitepress-plugin-mermaid";
 import { text } from 'stream/consumers';
+import { link } from 'fs';
 
 // https://vitepress.dev/reference/site-config
 export default withMermaid({
@@ -181,9 +182,14 @@ export default withMermaid({
               ]
             }, {
               text: 'Diagnóstico y solución de problemas', link: '/network/troubleshooting', items: [
+                { text: 'ip config', link: '/network/troubleshooting/ip-config' },
                 { text: 'Ping', link: '/network/troubleshooting/ping' },
                 { text: 'Traceroute', link: '/network/troubleshooting/traceroute' },
-                { text: 'Netstat', link: '/network/troubleshooting/netstat' }
+                { text: 'Netstat/ss', link: '/network/troubleshooting/netstat' },
+                { text: 'nmap', link: '/network/troubleshooting/nmap' },
+                // { text: 'Iftop', link: '/network/troubleshooting/iftop' },
+                // { text: 'Tcpdump', link: '/network/troubleshooting/tcpdump' },
+                { text: 'Curl y Wget', link: '/network/troubleshooting/curl-wget' }
               ]
             },
             { text: 'APIs y servicios web', link: '/network/apis' }
